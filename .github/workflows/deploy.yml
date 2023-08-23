@@ -25,9 +25,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Checkout or create production branch
+      - name: Push to production branch
         run: |
-          git checkout production || git checkout -b production
+          git fetch
+          git branch -f production main
           git push origin production
 
   deploy-to-production:
