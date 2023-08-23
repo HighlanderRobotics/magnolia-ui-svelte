@@ -1,0 +1,60 @@
+name: Bump Version and Deploy to Production
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  bump-version:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Bump version based on conventional commits
+        uses: phips28/gh-action-bump-version@v10.0.0
+        with:
+          tag-prefix: ''
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Checkout or create production branch
+        run: |
+          git checkout production || git checkout -b production
+          git push origin production
+
+  deploy-to-production:
+    needs: bump-version
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          ref: production
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run package command
+        run: npm run package
+
+      - name: Commit and push dist folder
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "github-actions@github.com"
+          git add -f dist
+          git commit -m "Add packaged files to production branch"
+          git push origin production
