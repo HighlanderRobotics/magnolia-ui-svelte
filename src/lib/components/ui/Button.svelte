@@ -28,7 +28,7 @@
 
 	const dispatch = createEventDispatcher();
 
-	function handleClick(event: any) {
+	function handleClick(event: MouseEvent) {
 		dispatch('click', event.detail);
 	}
 </script>
