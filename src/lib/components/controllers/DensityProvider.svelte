@@ -1,7 +1,7 @@
 <script lang="ts">
-    export let density: 'spacious' | 'compact';
+	export let density: 'spacious' | 'compact';
 </script>
 
 <div class="density-{density}">
-    <slot />
+	<slot />
 </div>
