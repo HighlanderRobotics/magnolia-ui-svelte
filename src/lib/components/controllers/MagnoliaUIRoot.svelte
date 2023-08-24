@@ -164,11 +164,11 @@
 
 	main {
 		min-height: 100vh;
-        background-color: var(--background) ;
+		background-color: var(--background);
 	}
 
 	:global(*) {
 		font-family: Heebo, sans-serif;
-        color: var(--on-background);
+		color: var(--on-background);
 	}
 </style>
