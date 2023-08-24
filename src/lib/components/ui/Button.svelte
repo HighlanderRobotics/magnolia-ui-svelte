@@ -24,7 +24,7 @@
 	/**
 	 * Prevents the component from being interacted with.
 	 */
-	export let disabled: boolean = false;
+	export let disabled = false;
 
 	const dispatch = createEventDispatcher();
 
