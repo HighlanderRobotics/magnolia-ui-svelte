@@ -121,7 +121,7 @@
 
 	:global(.color-scheme-dark) {
 		--victory-purple: #b59aff;
-		--victory-purple-hover: #8f81b7;
+		--victory-purple-hover: #bbaaf0;
 		--victory-purple-faded: #564b75;
 		--on-victory-purple-faded: #1f1f1f;
 
@@ -146,7 +146,7 @@
 	@media (prefers-color-scheme: dark) {
 		:global(:root) {
 			--victory-purple: #b59aff;
-			--victory-purple-hover: #8f81b7;
+			--victory-purple-hover: #bbaaf0;
 			--victory-purple-faded: #564b75;
 			--on-victory-purple-faded: #1f1f1f;
 
