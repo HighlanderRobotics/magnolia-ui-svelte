@@ -117,6 +117,8 @@
 		--on-background: #000000;
 
 		--body: #454545;
+
+		--placeholder: #828282;
 	}
 
 	:global(.color-scheme-dark) {
@@ -141,6 +143,8 @@
 		--on-background: #e0e0e0;
 
 		--body: #b8b8b8;
+
+		--placeholder: #626262;
 	}
 
 	@media (prefers-color-scheme: dark) {
@@ -166,6 +170,8 @@
 			--on-background: #e0e0e0;
 
 			--body: #b8b8b8;
+
+			--placeholder: #626262;
 		}
 	}
 

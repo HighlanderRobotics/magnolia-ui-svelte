@@ -5,5 +5,6 @@ import DensityProvider from './components/controllers/DensityProvider.svelte';
 import Button from './components/ui/Button.svelte';
 import Icon from './components/ui/Icon.svelte';
 import Switch from './components/ui/Switch.svelte';
+import TextField from './components/ui/TextField.svelte';
 
-export { MagnoliaUIRoot, DensityProvider, Button, Icon, Switch };
+export { MagnoliaUIRoot, DensityProvider, Button, Icon, Switch, TextField };
