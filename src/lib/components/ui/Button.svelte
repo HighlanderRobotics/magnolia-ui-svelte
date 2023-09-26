@@ -97,11 +97,11 @@
 		background-color: var(--victory-purple-hover);
 	}
 
-	.button:disabled {
+	.button[aria-disabled=true] {
 		cursor: not-allowed;
 	}
 
-	.primary:disabled {
+	.primary[aria-disabled=true] {
 		background-color: var(--victory-purple-faded);
 		color: var(--on-victory-purple-faded);
 	}
@@ -115,7 +115,7 @@
 		background-color: var(--light-gray-hover);
 	}
 
-	.secondary:disabled {
+	.secondary[aria-disabled=true] {
 		background-color: var(--light-gray-faded);
 		color: var(--on-light-gray-faded);
 	}
@@ -129,7 +129,7 @@
 		background-color: var(--danger-hover);
 	}
 
-	.danger:disabled {
+	.danger[aria-disabled=true] {
 		background-color: var(--danger-faded);
 		color: var(--on-danger-faded);
 	}
@@ -143,7 +143,7 @@
 		color: var(--victory-purple-hover);
 	}
 
-	.text-only:disabled {
+	.text-only[aria-disabled=true] {
 		color: var(--victory-purple-faded);
 	}
 
@@ -156,7 +156,7 @@
 		color: var(--body)
 	}
 
-	.text-only-secondary:disabled {
+	.text-only-secondary[aria-disabled=true] {
 		color: var(--light-gray);
 	}
 </style>
