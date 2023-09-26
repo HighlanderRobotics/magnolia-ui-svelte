@@ -4,7 +4,7 @@
 	/**
 	 * The visual appearance of the button.
 	 */
-	export let variant: 'primary' | 'secondary' | 'danger' | 'text-only' = 'primary';
+	export let variant: 'primary' | 'secondary' | 'danger' | 'text-only' | 'text-only-secondary' = 'primary';
 
 	/**
 	 * The DOM element to render the button with.
@@ -145,5 +145,18 @@
 
 	.text-only:disabled {
 		color: var(--victory-purple-faded);
+	}
+
+	.text-only-secondary {
+		color: var(--on-background);
+		background-color: transparent;
+	}
+
+	.text-only-secondary:hover {
+		color: var(--body)
+	}
+
+	.text-only-secondary:disabled {
+		color: var(--light-gray);
 	}
 </style>
