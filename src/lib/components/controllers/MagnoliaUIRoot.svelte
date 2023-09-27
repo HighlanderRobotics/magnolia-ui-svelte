@@ -180,6 +180,10 @@
 		background-color: var(--background);
 	}
 
+	:global(body) {
+		background-color: var(--background);
+	}
+
 	:global(*) {
 		font-family: Heebo, sans-serif;
 		color: var(--on-background);
