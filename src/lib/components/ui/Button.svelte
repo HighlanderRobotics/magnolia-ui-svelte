@@ -64,7 +64,7 @@
 		margin: 0;
 		border-radius: 7px;
 
-		font-family: Heebo;
+		font-family: Heebo, sans-serif;
 		font-size: 16px;
 		font-style: normal;
 		font-weight: 500;
