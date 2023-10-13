@@ -9,6 +9,7 @@
 	export let type: HTMLInputTypeAttribute = "text";
 	export let name: string | null = null;
 	export let id: string | null = null;
+	export let required = false;
 
 	import { fly } from 'svelte/transition';
 </script>
@@ -23,8 +24,10 @@
 		{disabled}
 		aria-disabled={disabled}
 		aria-label={ariaLabel}
+		aria-required={required}
 		{name}
 		{id}
+		{required}
 	/>
 
 	{#if errorMessage}
