@@ -1,16 +1,19 @@
 <script lang="ts">
+	import type { HTMLInputTypeAttribute } from 'svelte/elements';
+
 	export let value = '';
 	export let placeholder = '';
 	export let errorMessage: string | null = null;
 	export let disabled = false;
 	export let ariaLabel: string | null = null;
+	export let type: HTMLInputTypeAttribute = "text";
 
 	import { fly } from 'svelte/transition';
 </script>
 
 <div class="input">
 	<input
-		type="text"
+		{...{ type }}
 		{placeholder}
 		bind:value
 		aria-invalid={errorMessage != null}
