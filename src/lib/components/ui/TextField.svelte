@@ -7,6 +7,8 @@
 	export let disabled = false;
 	export let ariaLabel: string | null = null;
 	export let type: HTMLInputTypeAttribute = "text";
+	export let name: string | null;
+	export let id: string | null;
 
 	import { fly } from 'svelte/transition';
 </script>
@@ -21,6 +23,8 @@
 		{disabled}
 		aria-disabled={disabled}
 		aria-label={ariaLabel}
+		{name}
+		{id}
 	/>
 
 	{#if errorMessage}
