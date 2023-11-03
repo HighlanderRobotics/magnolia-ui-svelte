@@ -10,6 +10,7 @@ import Menu from './components/ui/menu/Menu.svelte';
 import MenuWrapper from './components/ui/menu/MenuWrapper.svelte';
 import MenuItem from './components/ui/menu/MenuItem.svelte';
 import MenuButton from './components/ui/menu/MenuButton.svelte';
+import Dialog from './components/ui/Dialog.svelte';
 
 export {
 	MagnoliaUIRoot,
@@ -21,5 +22,6 @@ export {
 	Menu,
 	MenuWrapper,
 	MenuItem,
-	MenuButton
+	MenuButton,
+	Dialog,
 };
