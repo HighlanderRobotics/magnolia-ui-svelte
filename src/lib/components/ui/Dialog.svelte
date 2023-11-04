@@ -14,7 +14,9 @@
         out:fade={{ duration: 100 }}
         on:click={() => open = !canClose}
     >
-        <div class="dialog" in:fly={{ duration: 300, y: 100, easing: cubicOut }}>
+        <!-- svelte-ignore a11y-no-static-element-interactions -->
+        <!-- svelte-ignore a11y-click-events-have-key-events -->
+        <div class="dialog" in:fly={{ duration: 300, y: 100, easing: cubicOut }} on:click={(e) => e.stopPropagation()}>
             <slot />
         </div>
     </div>
