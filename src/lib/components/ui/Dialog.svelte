@@ -35,6 +35,7 @@
         padding: 16px;
         display: grid;
         place-items: center;
+        z-index: 99;
     }
 
     .dialog {
@@ -45,5 +46,6 @@
         width: min(600px, calc(100vw - 32px));
         max-height: calc(100vh - 32px);
         overflow-y: scroll;
+        z-index: 100;
     }
 </style>
