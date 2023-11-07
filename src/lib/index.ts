@@ -11,6 +11,7 @@ import MenuWrapper from './components/ui/menu/MenuWrapper.svelte';
 import MenuItem from './components/ui/menu/MenuItem.svelte';
 import MenuButton from './components/ui/menu/MenuButton.svelte';
 import Dialog from './components/ui/Dialog.svelte';
+import Select from './components/ui/Select.svelte';
 
 export {
 	MagnoliaUIRoot,
@@ -24,4 +25,5 @@ export {
 	MenuItem,
 	MenuButton,
 	Dialog,
+	Select,
 };
