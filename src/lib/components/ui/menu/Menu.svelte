@@ -53,6 +53,7 @@
 
         position: absolute;
         top: 100%;
+        z-index: 50;
     }
 
     .menu.left {
@@ -69,5 +70,6 @@
         left: 0;
         right: 0;
         bottom: 0;
+        z-index: 49;
     }
 </style>
