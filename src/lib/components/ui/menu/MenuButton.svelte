@@ -57,6 +57,9 @@
 
 <style>
 	.menu-item {
+		display: block;
+		text-decoration: none;
+		
 		width: 100%;
 		padding: 8px 14px;
 		color: var(--on-background);
@@ -85,7 +88,7 @@
 		background-color: var(--victory-purple-hover);
 	}
 
-	.button[aria-disabled=true] {
+	.menu-item[aria-disabled=true] {
 		cursor: not-allowed;
 	}
 
