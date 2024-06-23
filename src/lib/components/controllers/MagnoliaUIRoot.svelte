@@ -1,16 +1,61 @@
-<svelte:head>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-		rel="stylesheet"
-	/>
-</svelte:head>
+<script lang="ts">
+	import { onMount } from 'svelte';
 
-<main>
+	let fullIconsWillLoad = false;
+
+	onMount(async () => {
+		if (document) {
+			fullIconsWillLoad = true;
+			document.fonts.load('Material Symbols Rounded Full');
+		}
+	});
+</script>
+
+<main class:fullIconsWillLoad>
 	<slot />
 </main>
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+	@font-face {
+		font-family: 'Material Symbols Rounded Reduced';
+		font-style: normal;
+		font-weight: 500;
+		src: url(https://fonts.gstatic.com/s/materialsymbolsrounded/v190/syl7-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190FjpZIvLgyidOK7BDB_Qb9vUdV6_gjDK-P3JuF_Zs-obHph2-jOcVzKPq8a9A5M.woff2)
+			format('woff2');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Material Symbols Rounded Full';
+		font-style: normal;
+		font-weight: 100 700;
+		src: url(https://fonts.gstatic.com/s/materialsymbolsrounded/v190/sykg-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190FjzaqkNCeE.woff2)
+			format('woff2');
+		font-display: swap;
+	}
+
+	:global(.material-symbols-rounded) {
+		font-family: 'Material Symbols Rounded Reduced';
+		font-weight: normal;
+		font-style: normal;
+		font-size: 24px;
+		line-height: 1;
+		letter-spacing: normal;
+		text-transform: none;
+		display: inline-block;
+		white-space: nowrap;
+		word-wrap: normal;
+		direction: ltr;
+		-webkit-font-feature-settings: 'liga';
+		font-feature-settings: 'liga';
+		-webkit-font-smoothing: antialiased;
+	}
+
+	.fullIconsWillLoad :global(.material-symbols-rounded) {
+		font-family: 'Material Symbols Rounded Full', 'Material Symbols Rounded Reduced';
+	}
 
 	/* Reset */
 	/* Box sizing rules */
