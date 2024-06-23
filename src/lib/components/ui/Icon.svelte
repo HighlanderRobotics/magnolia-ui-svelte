@@ -1,10 +1,12 @@
 <script lang="ts">
+	import type { MaterialSymbols } from 'material-design-icons-literal-types';
+
 	/**
 	 * Material Symbols icon name.
 	 *
 	 * [Browse icons](https://fonts.google.com/icons?icon.style=Rounded&icon.set=Material+Symbols)
 	 */
-	export let icon: string;
+	export let icon: MaterialSymbols;
 
 	/**
 	 * The size of the icon, in pixels.
