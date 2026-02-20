@@ -6,7 +6,7 @@
 	export let errorMessage: string | null = null;
 	export let disabled = false;
 	export let ariaLabel: string | null = null;
-	export let type: HTMLInputTypeAttribute = "text";
+	export let type: HTMLInputTypeAttribute = 'text';
 	export let name: string | null = null;
 	export let id: string | null = null;
 	export let required = false;

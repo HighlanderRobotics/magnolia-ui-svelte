@@ -59,7 +59,7 @@
 	.menu-item {
 		display: block;
 		text-decoration: none;
-		
+
 		width: 100%;
 		padding: 8px 14px;
 		color: var(--on-background);
@@ -88,11 +88,11 @@
 		background-color: var(--victory-purple-hover);
 	}
 
-	.menu-item[aria-disabled=true] {
+	.menu-item[aria-disabled='true'] {
 		cursor: not-allowed;
 	}
 
-	.primary[aria-disabled=true] {
+	.primary[aria-disabled='true'] {
 		background-color: var(--victory-purple-faded);
 		color: var(--on-victory-purple-faded);
 	}
@@ -106,7 +106,7 @@
 		background-color: var(--light-gray);
 	}
 
-	.secondary[aria-disabled=true] {
+	.secondary[aria-disabled='true'] {
 		background-color: var(--secondary-container-faded);
 		color: var(--on-light-gray-faded);
 	}
@@ -120,7 +120,7 @@
 		background-color: var(--danger-hover);
 	}
 
-	.danger[aria-disabled=true] {
+	.danger[aria-disabled='true'] {
 		background-color: var(--danger-faded);
 		color: var(--on-danger-faded);
 	}

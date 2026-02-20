@@ -25,5 +25,5 @@ export {
 	MenuItem,
 	MenuButton,
 	Dialog,
-	Select,
+	Select
 };

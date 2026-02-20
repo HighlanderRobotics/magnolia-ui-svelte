@@ -4,7 +4,8 @@
 	/**
 	 * The visual appearance of the button.
 	 */
-	export let variant: 'primary' | 'secondary' | 'danger' | 'text-only' | 'text-only-secondary' = 'primary';
+	export let variant: 'primary' | 'secondary' | 'danger' | 'text-only' | 'text-only-secondary' =
+		'primary';
 
 	/**
 	 * The DOM element to render the button with.
@@ -97,11 +98,11 @@
 		background-color: var(--victory-purple-hover);
 	}
 
-	.button[aria-disabled=true] {
+	.button[aria-disabled='true'] {
 		cursor: not-allowed;
 	}
 
-	.primary[aria-disabled=true] {
+	.primary[aria-disabled='true'] {
 		background-color: var(--victory-purple-faded);
 		color: var(--on-victory-purple-faded);
 	}
@@ -115,7 +116,7 @@
 		background-color: var(--light-gray-hover);
 	}
 
-	.secondary[aria-disabled=true] {
+	.secondary[aria-disabled='true'] {
 		background-color: var(--light-gray-faded);
 		color: var(--on-light-gray-faded);
 	}
@@ -129,7 +130,7 @@
 		background-color: var(--danger-hover);
 	}
 
-	.danger[aria-disabled=true] {
+	.danger[aria-disabled='true'] {
 		background-color: var(--danger-faded);
 		color: var(--on-danger-faded);
 	}
@@ -143,7 +144,7 @@
 		color: var(--victory-purple-hover);
 	}
 
-	.text-only[aria-disabled=true] {
+	.text-only[aria-disabled='true'] {
 		color: var(--victory-purple-faded);
 	}
 
@@ -153,10 +154,10 @@
 	}
 
 	.text-only-secondary:hover {
-		color: var(--body)
+		color: var(--body);
 	}
 
-	.text-only-secondary[aria-disabled=true] {
+	.text-only-secondary[aria-disabled='true'] {
 		color: var(--light-gray);
 	}
 </style>
